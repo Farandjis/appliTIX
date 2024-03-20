@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SAE_inscription</string>
+    <string name="login">Login</string>
+    <string name="mdp">Mot de passe</string>
+    <string name="confirmation">Vérification mdp</string>
+    <string name="nom">Nom</string>
+    <string name="prenom">Prénom</string>
+    <string name="email">Email</string>
+    <string name="captcha">Captcha</string>
+</resources>
