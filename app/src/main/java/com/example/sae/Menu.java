@@ -40,7 +40,6 @@ public class Menu extends AppCompatActivity {
         }  else if (id == R.id.menu_accueil) {
 
         } else if (id == R.id.menu_profil) {
-
         }else if (id == R.id.menu_administration) {
             Intent intent = new Intent(this, Maintenance.class);
             startActivity(intent);

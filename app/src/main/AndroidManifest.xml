@@ -22,7 +22,11 @@
             android:name=".Maintenance"
             android:exported="true" />
         <activity
+<<<<<<< HEAD
             android:name=".Inscription"
+=======
+            android:name=".creerticket"
+>>>>>>> 5e9d31eb8361b2cba7a5dc765d38be9772083759
             android:exported="true" />
         <activity
             android:name=".Menu"

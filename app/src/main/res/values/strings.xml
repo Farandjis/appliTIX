@@ -3,6 +3,7 @@
     <string name="tdb_date1">De JJ/MM/AAAA</string>
     <string name="tdb_date2">A JJ/MM/AAAA</string>
     <string name="tdb_titre">Motif pour chercher des titres</string>
+<<<<<<< HEAD
     <string name="login">Login</string>
     <string name="mdp">Mot de passe</string>
     <string name="confirmation">Vérification mdp</string>
@@ -10,4 +11,8 @@
     <string name="prenom">Prénom</string>
     <string name="email">Email</string>
     <string name="captcha">Captcha</string>
+=======
+    <string name="scroll_view">Scroll View Hero</string>
+    <string name="inscription">Inscription</string>
+>>>>>>> 5e9d31eb8361b2cba7a5dc765d38be9772083759
 </resources>
