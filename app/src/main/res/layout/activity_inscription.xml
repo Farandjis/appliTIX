@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inscription">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="184dp"
+        android:layout_height="245dp"
+        android:background="#211a43"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.449"
+        tools:ignore="MissingConstraints">
+
+
+        <EditText
+            android:id="@+id/editLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/login"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/editMdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:hint="@string/mdp"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColorHint="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/editConfirmation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:hint="@string/confirmation"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColorHint="#FFFFFF" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="201dp"
+        android:layout_height="247dp"
+        android:background="#211a43"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.448"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/editNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:hint="@string/nom"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/editPrenom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:hint="@string/prenom"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="367dp"
+        android:layout_height="153dp"
+        android:background="#211a43"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.752"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/editCaptcha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:hint="@string/captcha"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColorHint="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Déjà un compte ?"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inscription" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
