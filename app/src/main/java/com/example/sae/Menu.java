@@ -3,6 +3,7 @@ package com.example.sae;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -41,7 +42,8 @@ public class Menu extends AppCompatActivity {
         }else if (id == R.id.menu_administration) {
 
         }else if (id == R.id.menu_tableauDeBord) {
-
+            Intent intent = new Intent(this, tableaubord.class);
+            startActivity(intent);
         }else if (id == R.id.menu_quitter) {
             finish();
         }else {

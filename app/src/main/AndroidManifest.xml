@@ -13,6 +13,9 @@
         android:theme="@style/Theme.SAE"
         tools:targetApi="31">
         <activity
+            android:name=".tableaubord"
+            android:exported="false" />
+        <activity
             android:name=".Menu"
             android:exported="true">
             <intent-filter>
