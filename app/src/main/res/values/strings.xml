@@ -3,4 +3,6 @@
     <string name="tdb_date1">De JJ/MM/AAAA</string>
     <string name="tdb_date2">A JJ/MM/AAAA</string>
     <string name="tdb_titre">Motif pour chercher des titres</string>
+    <string name="scroll_view">Scroll View Hero</string>
+    <string name="inscription">Inscription</string>
 </resources>
