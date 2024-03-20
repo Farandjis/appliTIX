@@ -32,6 +32,8 @@ public class Menu extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.menu_connexion) {
+            Intent intent = new Intent(this, Connexion.class);
+            startActivity(intent);
 
         } else if (id == R.id.menu_inscription) {
 
@@ -40,7 +42,8 @@ public class Menu extends AppCompatActivity {
         } else if (id == R.id.menu_profil) {
 
         }else if (id == R.id.menu_administration) {
-
+            Intent intent = new Intent(this, Maintenance.class);
+            startActivity(intent);
         }else if (id == R.id.menu_tableauDeBord) {
             Intent intent = new Intent(this, tableaubord.class);
             startActivity(intent);
