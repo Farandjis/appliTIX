@@ -2,6 +2,7 @@ package com.example.sae;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,9 +14,12 @@ public class Connexion extends AppCompatActivity {
     private EditText editTextLogin;
     private EditText editTextMdp;
     private Button buttonConnexion;
+    private Button buttonMdpOublie;
+    private Button buttonPasDeCompte;
     private Button buttonRetour;
     private ImageView imageView;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +29,8 @@ public class Connexion extends AppCompatActivity {
         editTextMdp = findViewById(R.id.editMdp);
         buttonConnexion = findViewById(R.id.buttonconnexion);
         buttonRetour = findViewById(R.id.buttonRetour);
+        buttonMdpOublie = findViewById(R.id.buttonmdpoublie);
+        buttonPasDeCompte = findViewById(R.id.buttonpasdecompte);
         imageView = findViewById(R.id.imageView);
 
         buttonConnexion.setOnClickListener(new View.OnClickListener() {
@@ -35,5 +41,28 @@ public class Connexion extends AppCompatActivity {
             }
         });
 
+        buttonRetour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Connexion.this, Menu.class);
+                startActivity(intent);
+            }
+        });
+
+        buttonMdpOublie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Connexion.this, Maintenance.class);
+                startActivity(intent);
+            }
+        });
+
+        buttonPasDeCompte.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Connexion.this, Inscription.class);
+                startActivity(intent);
+            }
+        });
     }
 }

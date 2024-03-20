@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:layout_width="392dp"
-        android:layout_height="262dp"
+        android:layout_height="300dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,8 +23,8 @@
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center_horizontal"
             android:text="Je me connecte"
-            android:textSize="24sp"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/editLogin"
@@ -48,13 +48,11 @@
             android:text="Mot de passe"
             android:textColor="#FFFFFF"/>
 
-        <TextView
-            android:id="@+id/textView2"
+        <Button
+            android:id="@+id/buttonmdpoublie"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical|center_horizontal"
-            android:text="Mot de passe oublié ? "
-            android:textColor="#FFFFFF"/>
+            android:text="Mot de passe oublié ? " />
 
         <Button
             android:id="@+id/buttonconnexion"
@@ -62,14 +60,11 @@
             android:layout_height="wrap_content"
             android:text="Connexion" />
 
-
-        <TextView
-            android:id="@+id/textView4"
+        <Button
+            android:id="@+id/buttonpasdecompte"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical|center_horizontal"
-            android:text="Pas de compte ?"
-            android:textColor="#FFFFFF"/>
+            android:text="Pas de compte ?" />
 
     </LinearLayout>
 
@@ -78,9 +73,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="91dp"
+        tools:layout_editor_absoluteY="75dp"
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
