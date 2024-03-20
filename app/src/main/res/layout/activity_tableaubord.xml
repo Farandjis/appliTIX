@@ -15,5 +15,149 @@
         app:title="Tableau de bord"
         app:titleTextColor="@android:color/white" />
 
+    <LinearLayout
+        android:id="@+id/lltdb"
+        android:layout_width="328dp"
+        android:layout_height="236dp"
+        android:layout_marginTop="128dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <Spinner
+            android:id="@+id/tdb_selectdestickets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tdb_date1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tdb_date2" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tdb_titre" />
+
+        <Spinner
+            android:id="@+id/tdb_selectdesmotscles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonCreerTicket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Créer un ticket"
+        app:layout_constraintBottom_toTopOf="@+id/lltdb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.561" />
+
+    <TableLayout
+        android:layout_width="394dp"
+        android:layout_height="195dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lltdb"
+        app:layout_constraintVertical_bias="0.515">
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="ID" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Date" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Titre" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Niv. Urgence" />
+
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="État" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="45" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="14/02/2024" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Logiciel malveillant" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Aucun" />
+
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="En attente" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="4" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="04/01/2024" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Matériel en panne" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Faible" />
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Ouvert" />
+        </TableRow>
+
+    </TableLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
